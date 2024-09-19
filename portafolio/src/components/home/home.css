@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -80,8 +83,24 @@ body {
 }
 
 .name h1 {
-    font-size: 4em;
-    color: #fff;
+    font-size: 7em;
+    color: #ffffffdd;
+    font-family: 'Lexend', sans-serif;
+}
+
+.description h2 {
+    font-size: 3em;
+    color: #ffffffee;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contacts{
+    margin-top: 50px;
+}
+
+.contacts a {
+    margin: 0 13px;
+    color: #ffffff;
 }
 
 @keyframes drop {
