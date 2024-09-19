@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    margin: 0 20px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #ffffff;
+}

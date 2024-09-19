@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../navbar/navbar";
 import Icon from '@mdi/react';
 import { mdiGithub } from '@mdi/js';
 import { mdiLinkedin } from '@mdi/js';
@@ -25,6 +26,9 @@ function Home() {
                     <a href="https://www.linkedin.com/in/sebasti%C3%A1n-jos%C3%A9-solorzano-p%C3%A9rez-7544b9205/" target="_blank" rel="noopener noreferrer"><Icon path={mdiLinkedin} size={2} color="white" /></a>
                     <a href="https://www.instagram.com/sebass.sp/" target="_blank" rel="noopener noreferrer"><Icon path={mdiInstagram} size={2} color="white" /></a>
                 </div>
+            </div>
+            <div className="navbar">
+                <Navbar />
             </div>
         </div>
     );
