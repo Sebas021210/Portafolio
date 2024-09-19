@@ -10,11 +10,12 @@ function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             const aboutSection = document.getElementById("About").offsetTop;
+            const experienceSection = document.getElementById("Experience").offsetTop;
             const projectsSection = document.getElementById("Projects").offsetTop;
             const currentScroll = window.scrollY;
 
             // Cambiar el color de las letras según la sección
-            if (currentScroll >= aboutSection - 50 || currentScroll >= projectsSection - 50) {
+            if (currentScroll >= aboutSection - 50 || currentScroll >= experienceSection - 50 || currentScroll >= projectsSection - 50) {
                 setNavColor("black");
             } else {
                 setNavColor("white");
@@ -49,6 +50,11 @@ function Navbar() {
                     <li>
                         <Link to="about" duration={500} className="nav-button" style={{ color: navColor }}>
                             About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="experience" duration={500} className="nav-button" style={{ color: navColor }}>
+                            Experience
                         </Link>
                     </li>
                     <li>
