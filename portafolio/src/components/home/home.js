@@ -4,6 +4,7 @@ import Icon from '@mdi/react';
 import { mdiGithub } from '@mdi/js';
 import { mdiLinkedin } from '@mdi/js';
 import { mdiInstagram } from '@mdi/js';
+import { mdiFileAccount } from '@mdi/js';
 import './home.css';
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
                     <a href="https://github.com/Sebas021210" target="_blank" rel="noopener noreferrer"><Icon path={mdiGithub} size={2} color="white" /></a>
                     <a href="https://www.linkedin.com/in/sebasti%C3%A1n-jos%C3%A9-solorzano-p%C3%A9rez-7544b9205/" target="_blank" rel="noopener noreferrer"><Icon path={mdiLinkedin} size={2} color="white" /></a>
                     <a href="https://www.instagram.com/sebass.sp/" target="_blank" rel="noopener noreferrer"><Icon path={mdiInstagram} size={2} color="white" /></a>
+                    <a href="https://drive.google.com/file/d/1GZGAlxNBM59FImgFMXUbgxd6sc00K6LX/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Icon path={mdiFileAccount} size={2} color="white" /></a>
                 </div>
             </div>
             <div className="navbar">
