@@ -110,3 +110,13 @@ html, .home {
       top: 110%;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .name h1 {
+        font-size: 4em;
+    }
+
+    .description h2 {
+        font-size: 2em;
+    }
+}
