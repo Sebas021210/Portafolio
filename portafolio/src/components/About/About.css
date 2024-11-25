@@ -1,14 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.about{
+  padding: 4rem 2rem;
+}
+
 .about-title h1 {
   font-family: 'Lexend', sans-serif;
+  font-size: 3rem;
   color: #000;
-  margin-bottom: 1rem;
+}
+
+.about-description{
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.about-description-info{
+  padding-right: 2rem;
+  width: 50%;
+}
+
+.about-description-info-image{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image{
+  width: 300px;
+  height: 290px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-description-info-text{
+  padding: 3rem 0;
+  text-align: justify;
+}
+
+.about-description-tec{
+  padding-left: 2rem;
+  width: 50%;
+}
+
+.about-description-tec-info{
+  padding: 2rem 0;
+}
+
+.customFieldset{
+  margin-bottom: 3rem;
+}
+
+.about-description h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+  color: #000;
 }
 
 .about-description p {
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
   color: #000;
-  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px){
+  .about{
+    padding: 3rem 2rem;
+  }
+
+  .about-title h1 {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;   
+  }
+
+  .about-description{
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .about-description-info{
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .profile-image{
+    width: 170px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .about-description-info-text{
+    padding: 0.5rem 0;
+    text-align: justify;
+  }  
+
+  .about-description-tec{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .about-description-tec-info{
+    padding: 0.5rem 0;
+  }
+
+  .customFieldset{
+    margin-bottom: 1rem;
+  }
+
+  .customFieldset span{
+    font-size: 0.8rem;
+  }
+
+  .about-description p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.6rem;
+    color: #000;
+  }
+
+  .about-description h2 {
+    font-size: 1rem;
+  }
 }
