@@ -50,13 +50,23 @@
 }
 
 .customFieldset{
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.Icon-tec-info{
+  margin-right: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .about-description h2 {
   font-family: 'Lexend', sans-serif;
   font-size: 2rem;
   color: #000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .about-description p {
