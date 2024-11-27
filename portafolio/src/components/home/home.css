@@ -82,13 +82,13 @@ html, .home {
 }
 
 .name h1 {
-    font-size: 7em;
+    font-size: 7rem;
     color: #ffffffdd;
     font-family: 'Lexend', sans-serif;
 }
 
 .description h2 {
-    font-size: 3em;
+    font-size: 3rem;
     color: #ffffffee;
     font-family: 'Raleway', sans-serif;
 }
@@ -113,10 +113,20 @@ html, .home {
 
 @media screen and (max-width: 450px) {
     .name h1 {
-        font-size: 4em;
+        font-size: 4rem;
     }
 
     .description h2 {
-        font-size: 2em;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .name h1 {
+        font-size: 3rem;
+    }
+
+    .description h2 {
+        font-size: 1.5rem;
     }
 }

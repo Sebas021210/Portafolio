@@ -50,3 +50,15 @@
     font-size: 0.7rem;
   }
 }
+
+@media screen and (max-width: 425px){
+  .experience {
+    padding: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .experience-content p {
+    font-size: 0.6rem;
+  }
+}

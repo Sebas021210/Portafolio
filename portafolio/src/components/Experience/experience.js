@@ -70,7 +70,7 @@ function Experience() {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
-                            <TimelineDot style={{ backgroundColor: "#598392" }}>
+                            <TimelineDot style={{ backgroundColor: "#171717" }}>
                                 <SchoolIcon />
                             </TimelineDot>
                             <TimelineConnector />
@@ -117,7 +117,7 @@ function Experience() {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
-                            <TimelineDot style={{ backgroundColor: "#598392" }}>
+                            <TimelineDot style={{ backgroundColor: "#171717" }}>
                                 <LaptopMacIcon />
                             </TimelineDot>
                             <TimelineConnector />

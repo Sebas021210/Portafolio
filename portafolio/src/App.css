@@ -25,3 +25,25 @@
         height: 170vh;
     }
 }
+
+@media screen and (max-width: 768px){
+    #About{
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #Experience{
+        height: 185vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #About{
+        height: 105vh;
+    }
+
+    #Experience{
+        height: 200vh;
+    }
+}

@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.projects {
+  padding: 4rem 2rem;
+}
+
+.projects-content{
+  padding: 1.5rem 0;
+}
+
 .projects-title h1 {
   font-family: 'Lexend', sans-serif;
+  font-size: 3rem;
   color: #000;
-  margin-bottom: 1rem;
 }
 
 .projects-description p {
   font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
   color: #000;
-  margin-bottom: 1rem;
 }
