@@ -6,7 +6,7 @@
 }
 
 .experience-content{
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 .experience-title h1 {
@@ -15,13 +15,38 @@
   color: #000;
 }
 
-.experience-item h2, h3, h4 {
+.experience-content h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
   color: #000;
 }
 
-.experience-item p {
+.experience-content p {
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000;
+}
+
+@media screen and (max-width: 767px){
+  .experience {
+    padding: 3rem 0rem;
+  }
+
+  .experience-title h1 {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .experience-content{
+    padding: 1.5rem 0;
+  }
+  
+  .experience-content h2, h3, h4 {
+    font-size: 1.5rem;
+  }
+  
+  .experience-content p {
+    font-size: 0.7rem;
+  }
 }

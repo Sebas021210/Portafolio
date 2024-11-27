@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -12,6 +12,23 @@ import Typography from '@mui/material/Typography';
 import './experience.css';
 
 function Experience() {
+    const [typography, setTypography] = useState("h6");
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 767) {
+                setTypography("body2");
+            } else {
+                setTypography("h6");
+            }
+        }
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
     return (
         <div className="experience">
             <div className="experience-title">
@@ -36,10 +53,10 @@ function Experience() {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
+                            <Typography variant={typography} component="span">
                                 High School
                             </Typography>
-                            <Typography>Because you need strength</Typography>
+                            <p>I developed an interest in technology during my high school years, where I gained a strong foundation that sparked my passion for computer science.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -59,10 +76,10 @@ function Experience() {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
+                            <Typography variant={typography} component="span">
                                 University
                             </Typography>
-                            <Typography>Because it&apos;s awesome!</Typography>
+                            <p>I am currently studying Computer Science and Information Technology Engineering at Universidad del Valle de Guatemala, where I have developed skills in programming, data analysis, and software development.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -83,10 +100,10 @@ function Experience() {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
+                            <Typography variant={typography} component="span">
                                 Teacher at a Computer Academy
                             </Typography>
-                            <Typography>Because you need strength</Typography>
+                            <p>I had the opportunity to teach at a computer academy, where I helped students learn the fundamentals of computing and develop practical projects, strengthening my communication and leadership skills.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -106,10 +123,10 @@ function Experience() {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
+                            <Typography variant={typography} component="span">
                                 Teaching Assistant at the University
                             </Typography>
-                            <Typography>Because it&apos;s awesome!</Typography>
+                            <p>I served as a teaching assistant for Basic Programming, where I supported students with their projects and deepened my knowledge of Python. This experience allowed me to contribute to teaching and grow professionally.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -130,10 +147,10 @@ function Experience() {
                             <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant="h6" component="span">
+                            <Typography variant={typography} component="span">
                                 Teaching Assistant at the University
                             </Typography>
-                            <Typography>Because you need strength</Typography>
+                            <p>For the second time, I participated as a teaching assistant at the university, also in Basic Programming. I contributed to the students' learning and the development of academic activities.</p>
                         </TimelineContent>
                     </TimelineItem>
 

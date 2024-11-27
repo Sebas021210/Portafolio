@@ -13,3 +13,15 @@
 #Projects{
     height: 100vh;
 }
+
+@media screen and (max-width: 1024px){
+    #Experience{
+        height: 135vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #Experience{
+        height: 170vh;
+    }
+}
