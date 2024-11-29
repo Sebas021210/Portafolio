@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .projects {
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
 }
 
 .projects-content{
@@ -18,5 +18,5 @@
 .projects-description p {
   font-family: 'Raleway', sans-serif;
   font-size: 0.9rem;
-  color: #000;
+  color: #fff;
 }
