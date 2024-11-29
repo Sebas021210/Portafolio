@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectsGrid from "../ProjectsGrid/projectsGrid";
 import './projects.css';
 
 function Projects() {
@@ -9,9 +10,9 @@ function Projects() {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects-description">
-                    <p>
-                        Here are some of the projects I have worked on:
-                    </p>
+                    <ProjectsGrid />
+                    <ProjectsGrid />
+                    <ProjectsGrid />
                 </div>
             </div>
         </div>

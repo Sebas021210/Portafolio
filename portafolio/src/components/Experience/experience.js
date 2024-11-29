@@ -113,7 +113,7 @@ function Experience() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            2024 - 2025
+                            2024
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
@@ -137,7 +137,7 @@ function Experience() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            2024 - 2025
+                            2024
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
