@@ -4,9 +4,9 @@ import Icon from '@mdi/react';
 import { mdiGithub, mdiOpenInNew } from '@mdi/js';
 import './projectsGrid.css';
 
-function ProjectsGrid() {
+function ProjectsGrid({ reverse }) {
     return (
-        <div className="projects-grid">
+        <div className={`projects-grid ${reverse ? "reverse" : ""}`}>
             <div className="projects-grid-img">
                 <img src={img1} alt="img1" />
             </div>
@@ -19,9 +19,12 @@ function ProjectsGrid() {
                     <p style={{ color: "#000" }} >React, Node.js, Express, Spotify API</p>
                 </div>
                 <div className="projects-grid-buttons">
-                    <a href="https://github.com/Sebas021210" target="_blank" rel="noopener noreferrer"><Icon path={mdiGithub} size={1.5} color="black" /></a>
-                    <a href="https://github.com/Sebas021210" target="_blank" rel="noopener noreferrer"><Icon path={mdiOpenInNew} size={1.5} color="black" /></a>
-                    
+                    <a href="https://github.com/Sebas021210" target="_blank" rel="noopener noreferrer">
+                        <Icon path={mdiGithub} size={1.5} color="black" />
+                    </a>
+                    <a href="https://github.com/Sebas021210" target="_blank" rel="noopener noreferrer">
+                        <Icon path={mdiOpenInNew} size={1.5} color="black" />
+                    </a>
                 </div>
             </div>
         </div>

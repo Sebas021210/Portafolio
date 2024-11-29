@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.projects-grid.reverse {
+    flex-direction: row-reverse;
+}
+
 .projects-grid-img{
     width: 55%;
 }
@@ -36,6 +40,11 @@
     padding: 0 3rem;
 }
 
+.projects-grid.reverse .projects-grid-content h1 {
+    text-align: start;
+    padding: 0 2rem;
+}
+
 .projects-grid-description{
     position: relative;
     margin-top: 1.5rem;
@@ -46,6 +55,11 @@
     background-color: #171717;
 }
 
+.projects-grid.reverse .projects-grid-description{
+    right: 0;
+    left: 2rem;
+}
+
 .projects-grid-description p{
     padding: 0.5rem 1rem;
 }
@@ -53,6 +67,11 @@
 .projects-grid-tech, .projects-grid-buttons {
     text-align: end;
     margin: 10px 50px
+}
+
+.projects-grid.reverse .projects-grid-tech, .projects-grid.reverse .projects-grid-buttons {
+    text-align: start;
+    margin: 10px 30px
 }
 
 .projects-grid-buttons a{
