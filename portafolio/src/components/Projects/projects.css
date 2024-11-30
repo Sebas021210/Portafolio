@@ -20,3 +20,33 @@
   font-size: 0.9rem;
   color: #fff;
 }
+
+.projects-button {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.projects-button button {
+  background-color: #171717;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.projects-button button:hover {
+  background-color: #2c2c2c;
+}
+
+.more-projects {
+  padding: 1.5rem 0;
+}
+
+.more-projects-title h1 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 3rem;
+  color: #000;
+}

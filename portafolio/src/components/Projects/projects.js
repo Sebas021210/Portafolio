@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectsGrid from "../ProjectsGrid/projectsGrid";
 import Nasa from "../../assets/Nasa.png";
 import DisneyClone from "../../assets/Disney+Clone.png";
@@ -59,7 +59,15 @@ function Projects() {
             img: ImageCSS,
             reverse: false,
         },
-    ]
+    ];
+
+    const [showAll, setShowAll] = useState(false);
+
+    const handleToggle = () => {
+        setShowAll(!showAll);
+    };
+
+    const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
     return (
         <div className="projects">
@@ -68,7 +76,7 @@ function Projects() {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects-description">
-                    {projects.map((project, index) => (
+                    {visibleProjects.map((project, index) => (
                         <ProjectsGrid 
                             key={project.id} 
                             reverse={index % 2 !== 0} 
@@ -80,6 +88,16 @@ function Projects() {
                             img={project.img}
                         />
                     ))}
+                </div>
+                <div className="projects-button">
+                    <button onClick={handleToggle}>
+                        {showAll ? "View Less" : "View More"}
+                    </button>
+                </div>
+            </div>
+            <div className="more-projects">
+                <div className="more-projects-title">
+                    <h1>More Projects</h1>
                 </div>
             </div>
         </div>
