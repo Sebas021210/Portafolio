@@ -22,13 +22,17 @@
 
 @media screen and (max-width: 1000px){
     #Experience{
-        height: 170vh;
+        height: 160vh;
     }
 }
 
 @media screen and (max-width: 768px){
     #About{
         height: 110vh;
+    }
+
+    #Experience{
+        height: 170vh;
     }
 }
 
