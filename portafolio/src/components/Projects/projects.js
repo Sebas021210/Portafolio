@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProjectsGrid from "../ProjectsGrid/projectsGrid";
+import Cards from "../Cards/cards";
 import Nasa from "../../assets/Nasa.png";
 import DisneyClone from "../../assets/Disney+Clone.png";
 import WhastApp from "../../assets/WhatsApp.png";
@@ -98,6 +99,14 @@ function Projects() {
             <div className="more-projects">
                 <div className="more-projects-title">
                     <h1>More Projects</h1>
+                </div>
+                <div className="more-projects-cards">
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
+                    <Cards />
                 </div>
             </div>
         </div>
