@@ -1,35 +1,43 @@
 import React from "react";
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Icon from '@mdi/react';
+import { mdiFolder, mdiGithub, mdiOpenInNew } from '@mdi/js';
 
-
-function Cards() {
+function Cards(props) {
     return (
         <div className="cards">
             <div className="cards-content">
-                <Card sx={{ maxWidth: 345 }}>
-                    <CardMedia
-                        sx={{ height: 140 }}
-                        image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
-                        title="green iguana"
+                <Card sx={{ maxWidth: 345, minHeight: 350 }}>
+                    <CardHeader
+                        avatar={
+                            <Icon path={mdiFolder} size={1.5} />
+                        }
+                        action={
+                            <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                                {props.github && (
+                                    <a href={props.github} target="_blank" rel="noopener noreferrer">
+                                        <Icon path={mdiGithub} size={1.5} color="black" />
+                                    </a>
+                                )}
+                                {props.demo && (
+                                    <a href={props.demo} target="_blank" rel="noopener noreferrer">
+                                        <Icon path={mdiOpenInNew} size={1.5} color="black" />
+                                    </a>
+                                )}
+                            </div>
+                        }
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Lizard
+                            {props.title}
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
+                            {props.description}
                         </Typography>
                     </CardContent>
-                    <CardActions>
-                        <Button size="small">Share</Button>
-                        <Button size="small">Learn More</Button>
-                    </CardActions>
                 </Card>
             </div>
         </div>
