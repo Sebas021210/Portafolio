@@ -10,7 +10,17 @@ function Cards(props) {
     return (
         <div className="cards">
             <div className="cards-content">
-                <Card sx={{ maxWidth: 345, minHeight: 350 }}>
+                <Card 
+                    sx={{ 
+                        maxWidth: 345, 
+                        minHeight: 350, 
+                        transition: 'transform 0.3s ease, box-shadow 0.3s ease', 
+                        '&:hover': {
+                            transform: 'translateY(-10px)',
+                            boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)',
+                        }
+                    }}
+                >
                     <CardHeader
                         avatar={
                             <Icon path={mdiFolder} size={1.5} />
