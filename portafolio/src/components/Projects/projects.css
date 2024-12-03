@@ -64,6 +64,20 @@
   .more-projects-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .projects-description p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .more-projects-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-description p {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 767px){
