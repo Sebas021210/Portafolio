@@ -36,18 +36,42 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 480px) and (max-height: 935px){
+    #About{
+        height: 85vh;
+    }
+
     #Experience{
-        height: 185vh;
+        height: 135vh;
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px) and (max-height: 916px){
     #About{
-        height: 105vh;
+        height: 85vh;
     }
 
     #Experience{
-        height: 200vh;
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px){
+    #About{
+        height: 95vh;
+    }
+
+    #Experience{
+        height: 160vh;
+    }
+}
+
+@media screen and (max-width: 376px){
+    #About{
+        height: 120vh;
+    }
+
+    #Experience{
+        height: 185vh;
     }
 }
