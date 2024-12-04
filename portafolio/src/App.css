@@ -90,6 +90,26 @@
     }
 }
 
+@media screen and (max-width: 480px) and (max-height: 750px){
+    #About{
+        height: 105vh;
+    }
+
+    #Experience{
+        height: 166vh;
+    }
+}
+
+@media screen and (max-width: 400px) and (max-height: 750px){
+    #About{
+        height: 105vh;
+    }
+
+    #Experience{
+        height: 180vh;
+    }
+}
+
 @media screen and (max-width: 376px){
     #About{
         height: 120vh;

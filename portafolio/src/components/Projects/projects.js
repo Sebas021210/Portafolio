@@ -13,7 +13,7 @@ function Projects() {
         {
             id: 1,
             title: "Nasa Space App",
-            description: "This project was developed as part of a hackathon organized by NASA, where we were provided with official resources and space-related data. My team worked on designing and developing an innovative solution to address one of the challenges posed by the organization. We created a functional application to analyze and visualize the challenge's information.",
+            description: "This project was developed as part of a NASA hackathon using official resources and space-related data. My team worked on designing and developing an innovative solution to address one of the challenges posed by the organization. We created a functional application, earning us the distinction of being the First Global Winner representing Guatemala.",
             tech: "React, Node.js, NASA API",
             github: "https://github.com/Jskenpo/imagine-our-connected-earth",
             demo: "https://imagine-our-connected-earth.web.app/",
