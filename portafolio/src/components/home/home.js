@@ -20,7 +20,7 @@ function Home() {
                     <h1>Sebastián Solorzano</h1>
                 </div>
                 <div className="description">
-                    <h2>Student of Computer Science</h2>
+                    <h2>Student of Computer Science | Web Master</h2>
                 </div>
                 <div className="contacts">
                     <a href="https://github.com/Sebas021210" target="_blank" rel="noopener noreferrer"><Icon path={mdiGithub} size={2} color="white" /></a>

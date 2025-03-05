@@ -113,7 +113,7 @@ function Experience() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            2024
+                            2024 - 2025
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
@@ -126,7 +126,7 @@ function Experience() {
                             <Typography variant={typography} component="span">
                                 Teaching Assistant at the University
                             </Typography>
-                            <p>I served as a teaching assistant for Basic Programming, where I supported students with their projects and deepened my knowledge of Python. This experience allowed me to contribute to teaching and grow professionally.</p>
+                            <p>I served as a teaching assistant for Basic Programming twice, supporting students with their projects and academic activities while deepening my knowledge of Python. Additionally, I was a teaching assistant for the Artificial Intelligence course, contributing to students' learning and further developing my teaching skills.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -137,7 +137,7 @@ function Experience() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            2024
+                            2024 - Present
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
@@ -148,9 +148,9 @@ function Experience() {
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
                             <Typography variant={typography} component="span">
-                                Teaching Assistant at the University
+                                Web Master at Electrónica Panamericana
                             </Typography>
-                            <p>For the second time, I participated as a teaching assistant at the university, also in Basic Programming. I contributed to the students' learning and the development of academic activities.</p>
+                            <p>I currently work as a Web Master at Electrónica Panamericana, where I am responsible for managing and maintaining the website. My responsibilities include content management, implementing improvements to the user experience, and analyzing metrics to enhance the company's digital presence.</p>
                         </TimelineContent>
                     </TimelineItem>
 
