@@ -7,7 +7,7 @@
 }
 
 #Experience{
-    height: 105vh;
+    height: 100vh;
 }
 
 #Projects{
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1024px){
     #Experience{
-        height: 135vh;
+        height: 140vh;
     }
 }
 
@@ -26,7 +26,7 @@
     }
 
     #Experience{
-        height: 75vh;
+        height: 80vh;
     }
 }
 
@@ -36,7 +36,7 @@
     }
 
     #Experience{
-        height: 100vh;
+        height: 105vh;
     }
 }
 
@@ -46,7 +46,7 @@
     }
 
     #Experience{
-        height: 170vh;
+        height: 175vh;
     }
 }
 
@@ -56,7 +56,7 @@
     }
 
     #Experience{
-        height: 120vh;
+        height: 125vh;
     }
 }
 
@@ -66,7 +66,7 @@
     }
 
     #Experience{
-        height: 135vh;
+        height: 140vh;
     }
 }
 
@@ -76,7 +76,7 @@
     }
 
     #Experience{
-        height: 150vh;
+        height: 155vh;
     }
 }
 
@@ -86,7 +86,7 @@
     }
 
     #Experience{
-        height: 160vh;
+        height: 165vh;
     }
 }
 
@@ -96,7 +96,7 @@
     }
 
     #Experience{
-        height: 166vh;
+        height: 170vh;
     }
 }
 
@@ -106,7 +106,7 @@
     }
 
     #Experience{
-        height: 180vh;
+        height: 185vh;
     }
 }
 
@@ -116,6 +116,6 @@
     }
 
     #Experience{
-        height: 185vh;
+        height: 190vh;
     }
 }

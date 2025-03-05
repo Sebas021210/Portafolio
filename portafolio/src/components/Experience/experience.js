@@ -126,7 +126,7 @@ function Experience() {
                             <Typography variant={typography} component="span">
                                 Teaching Assistant at the University
                             </Typography>
-                            <p>I served as a teaching assistant for Basic Programming twice, supporting students with their projects and academic activities while deepening my knowledge of Python. Additionally, I was a teaching assistant for the Artificial Intelligence course, contributing to students' learning and further developing my teaching skills.</p>
+                            <p>I served as a teaching assistant for Basic Programming twice, supporting students with their projects and academic activities. Additionally, I assisted in the Artificial Intelligence course, contributing to students' learning and further developing my teaching skills.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -150,7 +150,7 @@ function Experience() {
                             <Typography variant={typography} component="span">
                                 Web Master at Electrónica Panamericana
                             </Typography>
-                            <p>I currently work as a Web Master at Electrónica Panamericana, where I am responsible for managing and maintaining the website. My responsibilities include content management, implementing improvements to the user experience, and analyzing metrics to enhance the company's digital presence.</p>
+                            <p>I currently work as a Web Master, responsible for managing and maintaining the website. My responsibilities include content management, implementing improvements to the user experience, and analyzing metrics to enhance the company's digital presence.</p>
                         </TimelineContent>
                     </TimelineItem>
 
