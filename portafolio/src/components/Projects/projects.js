@@ -65,46 +65,46 @@ function Projects() {
     const OtherProjects = [
         {
             id: 6,
+            title: "AsyStorage",
+            description: "An API developed with FastAPI that allows users to upload files, encrypt them using RSA or ECC, digitally sign them, and store metadata in MongoDB Atlas. Files can later be securely downloaded along with their respective public keys. This project focuses on secure file handling by integrating modern cryptographic techniques with a service-oriented architecture.",
+            github: "https://github.com/Sebas021210/Lab4-CifradosAsimetricos-API",
+            demo: "",
+        },
+        {
+            id: 7,
+            title: "Secure Chat Platform",
+            description: "A robust API built with FastAPI that enables highly secure messaging between users. It supports user registration and authentication using OAuth and MFA. Messages are encrypted using AES in combination with ECC, digitally signed with ECDSA for authenticity, and verified using SHA-256 or SHA-3 hashing to ensure data integrity. A comprehensive solution focused on cybersecurity and privacy in digital communication.",
+            github: "https://github.com/Sebas021210/Proyecto2-Cifrados",
+            demo: ""
+        },
+        {
+            id: 8,
             title: "Cosita Mia",
             description: "A web application designed to simplify the online shopping experience. Users can explore a product catalog, add desired items to a shopping cart, and manage their purchases with ease. The user-friendly interface enables seamless tracking of selected products, promoting an efficient and enjoyable user experience.",
             github: "https://github.com/Jskenpo/Cositamia",
             demo: "https://cositamia-f3bb9.web.app/",
         },
         {
-            id: 7,
+            id: 9,
             title: "Taste Trail",
             description: "This web application aims to enhance the dining experience by allowing users to make reservations at a wide variety of restaurants. Additionally, it provides an intuitive interface that simplifies the process of selecting a restaurant and the desired time, making event or meal planning more practical and accessible.",
             github: "https://github.com/Sebas021210/DB2-Proyecto1",
             demo: null,
         },
         {
-            id: 8,
+            id: 10,
             title: "Watch Wise",
             description: "A web tool designed for movie and series enthusiasts. Watch Wise offers personalized recommendations based on the series and movies the user has added to their list. It also includes advanced filters to search for content by streaming platform, genre, or even favorite actors. It’s an ideal solution for discovering relevant content tailored to personal tastes.",
             github: "https://github.com/Sebas021210/DB2-Proyecto2",
             demo: null,
         },
         {
-            id: 9,
+            id: 11,
             title: "Compiler",
             description: "A technical project consisting of a compiler developed in Python using the ANTLR library and the Compiscript language. It includes a graphical interface where users can write their code, and upon compiling, it performs lexical, syntactic, and semantic analysis. The compiler generates machine code ready for execution, providing a practical and comprehensive way to understand the processes behind a compiler.",
             github: "https://github.com/Jskenpo/COMPIS_PROYECTO1",
             demo: null,
         },
-        {
-            id: 10,
-            title: "Doom",
-            description: "This project is a simulation of the iconic Doom video game, created from scratch using the raycasting technique. It’s programmed in C and recreates a basic yet immersive visual experience where users can explore a 3D environment that evokes the original game’s style. A technical implementation that combines programming and creativity.",
-            github: "https://github.com/Sebas021210/GC-Proyecto2-Raycasting-Doom",
-            demo: "https://youtu.be/m7UEq5wag3o",
-        },
-        {
-            id: 11,
-            title: "The Space",
-            description: "An interactive simulation rendering multiple planets in a three-dimensional space environment. Users can navigate through space by moving right, left, up, or down, and utilize the zoom feature to observe the planets' details. This project combines computer graphics and simulation to offer an immersive and educational experience.",
-            github: "https://github.com/Sebas021210/GC-Proyecto1-SpaceTravel",
-            demo: "https://youtu.be/yPUj11N0TdA",
-        }
     ];
 
     const [showAll, setShowAll] = useState(false);
@@ -123,9 +123,9 @@ function Projects() {
                 </div>
                 <div className="projects-description">
                     {visibleProjects.map((project, index) => (
-                        <ProjectsGrid 
-                            key={project.id} 
-                            reverse={index % 2 !== 0} 
+                        <ProjectsGrid
+                            key={project.id}
+                            reverse={index % 2 !== 0}
                             title={project.title}
                             description={project.description}
                             tech={project.tech}
@@ -147,8 +147,8 @@ function Projects() {
                 </div>
                 <div className="more-projects-cards">
                     {OtherProjects.map((project) => (
-                        <Cards 
-                            key={project.id} 
+                        <Cards
+                            key={project.id}
                             title={project.title}
                             description={project.description}
                             github={project.github}

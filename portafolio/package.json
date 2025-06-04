@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "portafolio",
   "version": "0.1.0",
   "private": true,
