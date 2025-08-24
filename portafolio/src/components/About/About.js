@@ -9,6 +9,7 @@ import { mdiGit, mdiDocker, mdiAws, mdiFirebase } from '@mdi/js';
 import Mongo from '../../assets/mongodb.svg';
 import Postgresql from '../../assets/postgresql.svg';
 import Expressjs from '../../assets/expressjs.svg';
+import Fastapi from '../../assets/fastapi.svg';
 import SebasSol from '../../assets/SebasSol.JPEG';
 import './About.css';
 
@@ -46,7 +47,7 @@ function About() {
                         </div>
                         <div className="about-description-info-text">
                             <p>
-                                Hi, I'm Sebastián, a 21-year-old student of Computer Science and Information Technology Engineering at Universidad del Valle de Guatemala. I am passionate about software development and always looking for new challenges to learn and grow as a professional. I have experience in web development and desktop applications. My goal is to gain experience and contribute my knowledge and skills to the development and success of the projects I participate in, while continuing to learn and grow as a professional.
+                                Hi, I'm Sebastián, a 22-year-old student of Computer Science and Information Technology Engineering at Universidad del Valle de Guatemala. I am passionate about software development and always looking for new challenges to learn and grow as a professional. I have experience in web development and desktop applications. My goal is to gain experience and contribute my knowledge and skills to the development and success of the projects I participate in, while continuing to learn and grow as a professional.
                             </p>
                         </div>
                     </div>
@@ -114,6 +115,9 @@ function About() {
                                     </Tooltip>
                                     <Tooltip title="Express.js" placement="bottom">
                                         <img src={Expressjs} alt="Expressjs" className="Icon-tec-info" width={iconSizeImage} />
+                                    </Tooltip>
+                                    <Tooltip title="FastAPI" placement="bottom">
+                                        <img src={Fastapi} alt="FastAPI" className="Icon-tec-info" width={iconSizeImage} />
                                     </Tooltip>
                                 </div>
                             </Fieldset>
