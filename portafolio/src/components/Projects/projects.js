@@ -1,15 +1,35 @@
 import React, { useState } from "react";
 import ProjectsGrid from "../ProjectsGrid/projectsGrid";
 import Cards from "../Cards/cards";
+import GamifyPy from "../../assets/GamifyPy.png";
 import Nasa from "../../assets/Nasa.png";
 import DisneyClone from "../../assets/Disney+Clone.png";
-import WhastApp from "../../assets/WhatsApp.png";
 import Portfolio from "../../assets/Portfolio.png";
 import ImageCSS from "../../assets/ImageCSS.png";
 import './projects.css';
 
 function Projects() {
     const projects = [
+        {
+            id: 12,
+            title: "GamifyPy",
+            description: "A personal project that helps people who are starting to program learn through gamification. The platform offers levels, lessons, and exercises that guide students step by step. It is a complete application with a frontend, a backend, and a database that stores each student's progress.",
+            tech: "React, Vite, FastAPI, PostgreSQL",
+            github: "https://github.com/Sebas021210/GamifyPy",
+            demo: "https://gamifypy.vercel.app/",
+            img: GamifyPy,
+            reverse: false,
+        },
+        {
+            id: 2,
+            title: "Disney+ Clone",
+            description: "This project is a clone of the Disney+ platform that replicates its design, including some of its movies, series, and content organized by categories, as well as the original page's animations. During development, I focused my efforts on creating a responsive interface capable of adapting to different screen sizes.",
+            tech: "React, Webpack, AWS",
+            github: "https://github.com/Sebas021210/Proyecto1-STW",
+            demo: "https://proyecto1-stw-8c95b.web.app/",
+            img: DisneyClone,
+            reverse: true,
+        },
         {
             id: 1,
             title: "Nasa Space App",
@@ -21,16 +41,6 @@ function Projects() {
             reverse: false,
         },
         {
-            id: 2,
-            title: "Disney+ Clone",
-            description: "This project is a clone of the Disney+ platform that replicates its design, including some of its movies, series, and content organized by categories, as well as the original page's animations. During development, I focused my efforts on creating a responsive interface capable of adapting to different screen sizes.",
-            tech: "React, Webapck, AWS",
-            github: "https://github.com/Sebas021210/Proyecto1-STW",
-            demo: "https://proyecto1-stw-8c95b.web.app/",
-            img: DisneyClone,
-            reverse: true,
-        },
-        {
             id: 3,
             title: "Portfolio",
             description: "This is my previous portfolio, designed to showcase my skills, projects, and professional experience in a clear and effective way. In this project, I combined modern technologies like React and Webpack to create a smooth and user-friendly experience. The design was carefully crafted to be responsive, ensuring proper visualization across various devices.",
@@ -39,16 +49,6 @@ function Projects() {
             demo: "https://portafolio-stw-8ca0c.web.app/",
             img: Portfolio,
             reverse: true,
-        },
-        {
-            id: 4,
-            title: "Whatsapp Clone",
-            description: "This project is a WhatsApp clone that uses the XMPP protocol for real-time messaging. It includes individual chats, sending and receiving messages, contact management, and an interface inspired by the official app. This experience helped me explore the fundamentals of real-time communication and learn more about implementing network protocols.",
-            tech: "React, Webpack, XMPP, Firebase",
-            github: "https://github.com/Sebas021210/Proyecto1-Redes",
-            demo: "https://github.com/Sebas021210/Proyecto1-Redes",
-            img: WhastApp,
-            reverse: false,
         },
         {
             id: 5,
@@ -78,31 +78,31 @@ function Projects() {
             demo: ""
         },
         {
-            id: 8,
-            title: "Cosita Mia",
-            description: "A web application designed to simplify the online shopping experience. Users can explore a product catalog, add desired items to a shopping cart, and manage their purchases with ease. The user-friendly interface enables seamless tracking of selected products, promoting an efficient and enjoyable user experience.",
-            github: "https://github.com/Jskenpo/Cositamia",
-            demo: "https://cositamia-f3bb9.web.app/",
-        },
-        {
-            id: 9,
-            title: "Taste Trail",
-            description: "This web application aims to enhance the dining experience by allowing users to make reservations at a wide variety of restaurants. Additionally, it provides an intuitive interface that simplifies the process of selecting a restaurant and the desired time, making event or meal planning more practical and accessible.",
-            github: "https://github.com/Sebas021210/DB2-Proyecto1",
-            demo: null,
-        },
-        {
-            id: 10,
-            title: "Watch Wise",
-            description: "A web tool designed for movie and series enthusiasts. Watch Wise offers personalized recommendations based on the series and movies the user has added to their list. It also includes advanced filters to search for content by streaming platform, genre, or even favorite actors. It’s an ideal solution for discovering relevant content tailored to personal tastes.",
-            github: "https://github.com/Sebas021210/DB2-Proyecto2",
-            demo: null,
-        },
-        {
             id: 11,
             title: "Compiler",
             description: "A technical project consisting of a compiler developed in Python using the ANTLR library and the Compiscript language. It includes a graphical interface where users can write their code, and upon compiling, it performs lexical, syntactic, and semantic analysis. The compiler generates machine code ready for execution, providing a practical and comprehensive way to understand the processes behind a compiler.",
             github: "https://github.com/Jskenpo/COMPIS_PROYECTO1",
+            demo: null,
+        },
+        {
+            id: 13,
+            title: "Fraud Detection for New Merchants",
+            description: "A binary classification model built with Python and LightGBM to detect fraudulent transactions, focusing on newly affiliated merchants. Since these merchants have no transaction history and many frauds occur during their first days of operation, I designed custom metrics such as recall, precision, and F1 score evaluated exclusively on new merchants to prioritize fraud detection in this segment.",
+            github: "https://github.com/Sebas021210/Proyecto-PlusTI",
+            demo: null,
+        },
+        {
+            id: 14,
+            title: "GamifyPy Security & Monitoring",
+            description: "An extension of my GamifyPy project focused on security and observability. I integrated the ELK Stack (Elasticsearch, Logstash, and Kibana) to centralize and monitor application logs, and used SonarQube and OWASP Dependency-Check to analyze code quality and detect vulnerabilities. The entire environment runs with Docker Compose and includes an automated test suite.",
+            github: "https://github.com/Sebas021210/GamifyPy_OWASP",
+            demo: null,
+        },
+        {
+            id: 4,
+            title: "Whatsapp Clone",
+            description: "This project is a WhatsApp clone that uses the XMPP protocol for real-time messaging. It includes individual chats, sending and receiving messages, contact management, and an interface inspired by the official app. This experience helped me explore the fundamentals of real-time communication and learn more about implementing network protocols.",
+            github: "https://github.com/Sebas021210/Proyecto1-Redes",
             demo: null,
         },
     ];

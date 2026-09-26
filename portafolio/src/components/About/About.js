@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Fieldset } from 'primereact/fieldset';
 import Tooltip from '@mui/material/Tooltip';
 import Icon from '@mdi/react';
-import { mdiLanguageJava, mdiLanguageJavascript, mdiLanguagePython, mdiLanguageC, mdiLanguageCpp, mdiLanguageKotlin } from '@mdi/js';
+import { mdiLanguageJavascript, mdiLanguageTypescript, mdiLanguagePython, mdiLanguageJava, mdiLanguageKotlin, mdiLanguagePhp } from '@mdi/js';
 import { mdiLanguageHtml5, mdiLanguageCss3, mdiReact, mdiAngular, mdiVuejs, mdiBootstrap } from '@mdi/js';
-import { mdiNodejs } from '@mdi/js';
+import { mdiNodejs, mdiLaravel } from '@mdi/js';
 import { mdiGit, mdiDocker, mdiAws, mdiFirebase } from '@mdi/js';
 import Mongo from '../../assets/mongodb.svg';
 import Postgresql from '../../assets/postgresql.svg';
+import Mysql from '../../assets/mysql.svg';
 import Expressjs from '../../assets/expressjs.svg';
 import Fastapi from '../../assets/fastapi.svg';
 import SebasSol from '../../assets/SebasSol.JPEG';
@@ -47,7 +48,7 @@ function About() {
                         </div>
                         <div className="about-description-info-text">
                             <p>
-                                Hi, I'm Sebastián, a 22-year-old student of Computer Science and Information Technology Engineering at Universidad del Valle de Guatemala. I am passionate about software development and always looking for new challenges to learn and grow as a professional. I have experience in web development and desktop applications. My goal is to gain experience and contribute my knowledge and skills to the development and success of the projects I participate in, while continuing to learn and grow as a professional.
+                                Hi, I’m Sebastián, a Computer Science and Information Technology Engineer graduated from Universidad del Valle de Guatemala. I have over 4 years of experience in frontend development and currently work as a Frontend Lead, where I lead the development of scalable, functional, and user-friendly web and mobile applications. I also have experience in full-stack development, contributing to the creation of complete solutions and integrating different technologies and services. I’m motivated by challenges that allow me to continue growing professionally and make a real impact through technology.
                             </p>
                         </div>
                     </div>
@@ -56,20 +57,20 @@ function About() {
                         <div className="about-description-tec-info">
                             <Fieldset legend="Languages" className="customFieldset">
                                 <div className="Icon-tec-info">
-                                    <Tooltip title="Java" placement="bottom" >
-                                        <Icon path={mdiLanguageJava} size={iconSize} color="black" className="Icon-tec-info" />
-                                    </Tooltip>
                                     <Tooltip title="JavaScript" placement="bottom">
                                         <Icon path={mdiLanguageJavascript} size={iconSize} color="black" className="Icon-tec-info" />
+                                    </Tooltip>
+                                    <Tooltip title="TypeScript" placement="bottom">
+                                        <Icon path={mdiLanguageTypescript} size={iconSize} color="black" className="Icon-tec-info" />
                                     </Tooltip>
                                     <Tooltip title="Python" placement="bottom">
                                         <Icon path={mdiLanguagePython} size={iconSize} color="black" className="Icon-tec-info" />
                                     </Tooltip>
-                                    <Tooltip title="C" placement="bottom">
-                                        <Icon path={mdiLanguageC} size={iconSize} color="black" className="Icon-tec-info" />
+                                    <Tooltip title="Java" placement="bottom">
+                                        <Icon path={mdiLanguageJava} size={iconSize} color="black" className="Icon-tec-info" />
                                     </Tooltip>
-                                    <Tooltip title="C++" placement="bottom">
-                                        <Icon path={mdiLanguageCpp} size={iconSize} color="black" className="Icon-tec-info" />
+                                    <Tooltip title="PHP" placement="bottom">
+                                        <Icon path={mdiLanguagePhp} size={iconSize} color="black" className="Icon-tec-info" />
                                     </Tooltip>
                                     <Tooltip title="Kotlin" placement="bottom">
                                         <Icon path={mdiLanguageKotlin} size={iconSize} color="black" className="Icon-tec-info" />
@@ -98,16 +99,6 @@ function About() {
                                     </Tooltip>
                                 </div>
                             </Fieldset>
-                            <Fieldset legend="DataBase" className="customFieldset">
-                                <div className="Icon-tec-info">
-                                    <Tooltip title="MongoDB" placement="bottom">
-                                        <img src={Mongo} alt="Mongo" className="Icon-tec-info" width={iconSizeImage} />
-                                    </Tooltip>
-                                    <Tooltip title="PostgreSQL" placement="bottom">
-                                        <img src={Postgresql} alt="Postgresql" className="Icon-tec-info" width={iconSizeImage} />
-                                    </Tooltip>
-                                </div>
-                            </Fieldset>
                             <Fieldset legend="Back-End" className="customFieldset">
                                 <div className="Icon-tec-info">
                                     <Tooltip title="Node.js" placement="bottom">
@@ -118,6 +109,22 @@ function About() {
                                     </Tooltip>
                                     <Tooltip title="FastAPI" placement="bottom">
                                         <img src={Fastapi} alt="FastAPI" className="Icon-tec-info" width={iconSizeImage} />
+                                    </Tooltip>
+                                    <Tooltip title="Laravel" placement="bottom">
+                                        <Icon path={mdiLaravel} size={iconSize} color="black" className="Icon-tec-info" />
+                                    </Tooltip>
+                                </div>
+                            </Fieldset>
+                            <Fieldset legend="DataBase" className="customFieldset">
+                                <div className="Icon-tec-info">
+                                    <Tooltip title="MongoDB" placement="bottom">
+                                        <img src={Mongo} alt="Mongo" className="Icon-tec-info" width={iconSizeImage} />
+                                    </Tooltip>
+                                    <Tooltip title="PostgreSQL" placement="bottom">
+                                        <img src={Postgresql} alt="Postgresql" className="Icon-tec-info" width={iconSizeImage} />
+                                    </Tooltip>
+                                    <Tooltip title="MySQL" placement="bottom">
+                                        <img src={Mysql} alt="MySQL" className="Icon-tec-info" width={iconSizeImage} />
                                     </Tooltip>
                                 </div>
                             </Fieldset>

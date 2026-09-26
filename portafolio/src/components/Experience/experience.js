@@ -79,7 +79,7 @@ function Experience() {
                             <Typography variant={typography} component="span">
                                 University
                             </Typography>
-                            <p>I am currently studying Computer Science and Information Technology Engineering at Universidad del Valle de Guatemala, where I have developed skills in programming, data analysis, and software development.</p>
+                            <p>I graduated in Computer Science and Information Technology Engineering from Universidad del Valle de Guatemala, where I developed skills in programming, data analysis, and software development.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -90,7 +90,7 @@ function Experience() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            2021 - 2023
+                            2024 - 2025
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
@@ -101,9 +101,9 @@ function Experience() {
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
                             <Typography variant={typography} component="span">
-                                Teacher at a Computer Academy
+                                Teaching Assistant at the University
                             </Typography>
-                            <p>I had the opportunity to teach at a computer academy, where I helped students learn the fundamentals of computing and develop practical projects, strengthening my communication and leadership skills.</p>
+                            <p>I served as a teaching assistant for Basic Programming twice, supporting students with their projects and academic activities. Additionally, I assisted in the Artificial Intelligence course, contributing to students' learning and further developing my teaching skills.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -124,9 +124,9 @@ function Experience() {
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
                             <Typography variant={typography} component="span">
-                                Teaching Assistant at the University
+                                Web Master at Electrónica Panamericana
                             </Typography>
-                            <p>I served as a teaching assistant for Basic Programming twice, supporting students with their projects and academic activities. Additionally, I assisted in the Artificial Intelligence course, contributing to students' learning and further developing my teaching skills.</p>
+                            <p>I worked as a Web Master, responsible for managing and maintaining the company's website. My responsibilities included content management, implementing user experience improvements, and analyzing metrics to enhance the company's digital presence.</p>
                         </TimelineContent>
                     </TimelineItem>
 
@@ -137,7 +137,7 @@ function Experience() {
                             variant="body2"
                             color="text.secondary"
                         >
-                            2024 - 2025
+                            2025 - Present
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector />
@@ -148,9 +148,9 @@ function Experience() {
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
                             <Typography variant={typography} component="span">
-                                Web Master at Electrónica Panamericana
+                                Frontend Lead Engineer at Revi Guatemala
                             </Typography>
-                            <p>I currently work as a Web Master, responsible for managing and maintaining the website. My responsibilities include content management, implementing improvements to the user experience, and analyzing metrics to enhance the company's digital presence.</p>
+                            <p>I currently work as a Frontend Lead Engineer, leading the development of web and mobile applications. I'm responsible for defining the frontend architecture and reviewing the tasks completed by the team to ensure they work correctly and stay aligned with our design guidelines. I also work closely with the backend team to deliver scalable, functional, and user-friendly products.</p>
                         </TimelineContent>
                     </TimelineItem>
 
